@@ -15,6 +15,14 @@ export default {
         alabaster: "#F8F8F8",
         mineshaft: "#222222",
         shuttlegray: "#595F69",
+        tangerine: "#FF9978",
+        cumin: "#973F22",
+        pomegranate: "#E24513",
+        apricot: "#F0926B",
+        manatee: "#919BAB",
+      },
+      backgroundImage: {
+        "bg-main": "url('/public/gradient-wallpaper.png')",
       },
     },
     screens: {
