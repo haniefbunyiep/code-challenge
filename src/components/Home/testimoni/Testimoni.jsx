@@ -64,7 +64,7 @@ export default function Testimoni() {
             Nina Sudianto
           </h1>
           <p className="text-nowrap py-3 pb-2 pt-1 text-xs font-bold leading-relaxed">
-            "Enterprise Merchant Partnerships at GoFood "
+            "Enterprise Merchant Partnerships at GoFood"
           </p>
           <p className="py-3 text-sm leading-relaxed">
             Fore Coffee is one of the most important GoFood merchants. As a
