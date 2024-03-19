@@ -7,7 +7,7 @@ import Testimoni from "~/components/Home/testimoni/Testimoni";
 
 export default function Home() {
   return (
-    <div className="flex w-full flex-col justify-around gap-y-8">
+    <div className="flex w-full flex-col justify-around gap-y-16">
       <BannerHomePage />
       <CompanyOverview />
       <Testimoni />
