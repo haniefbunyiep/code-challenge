@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import BannerHomePage from "~/components/Home/Banner/BannerHomePage";
 import ProductOverview from "~/components/Home/productOverview/ProductOverview";
 import Testimoni from "~/components/Home/testimoni/Testimoni";
@@ -16,6 +18,10 @@ export default async function HomePage() {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    fetchLimitedProducts();
+  }, []);
 
   const limited = await fetchLimitedProducts();
   return (

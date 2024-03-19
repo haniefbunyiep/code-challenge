@@ -2,7 +2,7 @@ import TestiQuote from "~/components/Icon/HomeQuote";
 
 export default function Testimoni() {
   return (
-    <div className=" flex flex-col items-center justify-center gap-[30px] lg:h-[900px]">
+    <div className=" flex flex-col items-center justify-center gap-[30px] p-10 lg:h-[900px]">
       {/* Header */}
       <h1 className="text-lg font-bold text-shuttlegray sm:text-3xl">
         What They Say About
