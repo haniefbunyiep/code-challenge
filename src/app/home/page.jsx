@@ -28,9 +28,11 @@ export default async function HomePage() {
     <div className="flex w-full flex-col justify-around">
       <BannerHomePage />
       <Testimoni />
-      {limited?.map((product, index) => {
-        return <ProductOverview key={index} {...product} />;
-      })}
+      {/* {limited?.map((product, index) => {
+        <div className="grid h-[900px] w-auto grid-cols-2 items-center justify-center">
+          return <ProductOverview key={index} {...product} />;
+        </div>;
+      })} */}
     </div>
   );
 }

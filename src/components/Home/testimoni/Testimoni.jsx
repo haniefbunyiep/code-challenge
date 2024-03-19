@@ -26,7 +26,7 @@ export default function Testimoni() {
             "Key Account Manager at GrabFood"
           </p>
           <p className="py-3 text-sm leading-relaxed">
-            Fore Coffee is one of the best merchants that I ever handled as a
+            Tomoro Coffee is one of the best merchants that I ever handled as a
             key account manager. we had a great journey to create some
             collaborations such as Exclusive Seasonal Menu, Percaya Projex, etc.
             The team was really helpful, organized, and had a fast response to
@@ -47,9 +47,9 @@ export default function Testimoni() {
             "Director of Fund Development at SOS Children’s Villages"
           </p>
           <p className="py-3 text-sm leading-relaxed">
-            Kami sangat mengapresiasi inisiatif dari Fore Coffee untuk
+            Kami sangat mengapresiasi inisiatif dari Tomoro Coffee untuk
             berkolaborasi bersama dalam kampanye ini. Semoga kolaborasi kami
-            dengan Fore Coffee bisa menginspirasi banyak pihak terutama dalam
+            dengan Tomoro Coffee bisa menginspirasi banyak pihak terutama dalam
             melakukan kampanye kebaikan.
           </p>
           <TestiQuote />
@@ -67,8 +67,8 @@ export default function Testimoni() {
             "Enterprise Merchant Partnerships at GoFood"
           </p>
           <p className="py-3 text-sm leading-relaxed">
-            Fore Coffee is one of the most important GoFood merchants. As a
-            partner, Fore is a very collaborative merchant because, during the
+            Tomoro Coffee is one of the most important GoFood merchants. As a
+            partner, Tomoro is a very collaborative merchant because, during the
             pandemic when all businesses were sluggish, we were able to
             collaborate to rebuild from scratch in order to turn around the
             business and achieve tremendous grow
@@ -88,10 +88,10 @@ export default function Testimoni() {
             "Onboard Product Lead at Citilink"
           </p>
           <p className="py-3 text-sm">
-            Bekerja dengan Fore Coffee bagi kami, sangat menyenagkan karena kami
-            bertemu dengan tim Fore Coffee yang sangat passionate, fun, fast
-            respon dan INOVATIF baik untuk produk dan juga program Activation
-            Onboard untuk penerbangan Citilink.
+            Bekerja dengan Tomoro Coffee bagi kami, sangat menyenagkan karena
+            kami bertemu dengan tim Tomoro Coffee yang sangat passionate, fun,
+            fast respon dan INOVATIF baik untuk produk dan juga program
+            Activation Onboard untuk penerbangan Citilink.
           </p>
           <TestiQuote />
         </div>
