@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import BannerHomePage from "~/components/Home/Banner/BannerHomePage";
-import ProductOverview from "~/components/Home/productOverview/ProductOverview";
+import FinalProductOverview from "~/components/Home/productOverview/ProductOverview";
 import Testimoni from "~/components/Home/testimoni/Testimoni";
 
 export default async function HomePage() {
@@ -28,11 +28,7 @@ export default async function HomePage() {
     <div className="flex w-full flex-col justify-around">
       <BannerHomePage />
       <Testimoni />
-      {/* {limited?.map((product, index) => {
-        <div className="grid h-[900px] w-auto grid-cols-2 items-center justify-center">
-          return <ProductOverview key={index} {...product} />;
-        </div>;
-      })} */}
+      <FinalProductOverview />
     </div>
   );
 }

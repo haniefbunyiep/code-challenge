@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import db from "../../../../db/db.json";
 
 export default async function FinalProductOverview() {
   const fetchLimitedProducts = async () => {
@@ -26,7 +27,7 @@ export default async function FinalProductOverview() {
         </h3>
       </div>
       <div className="grid grid-cols-1 gap-8 p-10 md:grid-cols-2 lg:gap-14 lg:py-10">
-        {limited?.map((product, index) => {
+        {db?.limited?.map((product, index) => {
           return <ProductCard key={index} {...product} />;
         })}
       </div>
