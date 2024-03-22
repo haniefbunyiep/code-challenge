@@ -1,10 +1,7 @@
 import BannerHomePage from "~/components/Home/Banner/BannerHomePage";
 import CompanyOverview from "~/components/Home/companyOverview/CompanyOverview";
-import ProductOverview from "~/components/Home/productOverview/ProductOverview";
 import FinalProductOverview from "~/components/Home/productOverview/ProductOverview";
-import TestProductOverview from "~/components/Home/productOverview/ProductCard";
 import Testimoni from "~/components/Home/testimoni/Testimoni";
-import Divider from "~/components/cores/Divider/divider";
 
 export default function Home() {
   return (
