@@ -3,7 +3,7 @@ export default function Culture() {
     <div className="-mx-0 bg-apricot lg:-mx-20">
       <div className="lg:p-none flex flex-col items-center justify-center gap-[30px] p-10 lg:h-[900px]">
         {/* Header */}
-        <h1 className="text-lg font-bold text-pampas sm:text-3xl">
+        <h1 className="text-center text-lg font-bold text-pampas sm:text-3xl md:text-start">
           "Embracing Change, Sustaining Values"
         </h1>
         <h3 className="text-md rounded-full border border-dashed border-pampas p-2 text-pampas sm:text-2xl">

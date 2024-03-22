@@ -4,6 +4,7 @@ import ProductOverview from "~/components/Home/productOverview/ProductOverview";
 import FinalProductOverview from "~/components/Home/productOverview/ProductOverview";
 import TestProductOverview from "~/components/Home/productOverview/ProductCard";
 import Testimoni from "~/components/Home/testimoni/Testimoni";
+import Divider from "~/components/cores/Divider/divider";
 
 export default function Home() {
   return (

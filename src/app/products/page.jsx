@@ -1,11 +1,13 @@
+import OurMenu from "~/components/Products/OurMenu";
+
 export default function Products() {
   return (
     <div>
       <h1
-        className="flex h-screen items-center justify-center text-3xl font-bold underline
+        className="flex w-full flex-col justify-around
       "
       >
-        Products
+        <OurMenu />
       </h1>
     </div>
   );

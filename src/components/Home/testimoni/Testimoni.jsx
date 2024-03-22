@@ -1,4 +1,6 @@
-import TestiQuote from "~/components/Icon/HomeQuote";
+import TestiQuote from "~/components/cores/Icon/HomeQuote";
+
+TestiQuote;
 
 export default function Testimoni() {
   return (
@@ -16,7 +18,10 @@ export default function Testimoni() {
         <div className="border-base relative rounded-xl border-slate-500 bg-white p-4 text-justify leading-relaxed text-shuttlegray shadow-2xl">
           <div className="avatar flex justify-center">
             <div className="w-16 ">
-              <img src="https://fore.coffee/wp-content/uploads/2020/06/download-1-1-56x56_c.png" />
+              <img
+                src="https://fore.coffee/wp-content/uploads/2020/06/download-1-1-56x56_c.png"
+                alt="GrabFood"
+              />
             </div>
           </div>
           <h1 className="flex justify-start py-3 pb-2 text-sm font-bold">
@@ -37,7 +42,10 @@ export default function Testimoni() {
         <div className="border-base relative rounded-xl border-slate-500 bg-white p-4 text-justify leading-relaxed text-shuttlegray shadow-2xl">
           <div className="avatar flex justify-center">
             <div className="w-16 rounded-full">
-              <img src="https://fore.coffee/wp-content/uploads/2020/06/download-1-56x56_c.png" />
+              <img
+                src="https://fore.coffee/wp-content/uploads/2020/06/download-1-56x56_c.png"
+                alt="Children’s Villages"
+              />
             </div>
           </div>
           <h1 className="flex justify-start py-3 pb-2 text-sm font-bold">
@@ -57,7 +65,10 @@ export default function Testimoni() {
         <div className="border-base relative rounded-xl border-slate-500 bg-white p-4 text-justify leading-relaxed text-shuttlegray shadow-2xl">
           <div className="avatar flex justify-center">
             <div className="w-16">
-              <img src="https://fore.coffee/wp-content/uploads/2020/06/GoFood_Square-56x56_c.png" />
+              <img
+                src="https://fore.coffee/wp-content/uploads/2020/06/GoFood_Square-56x56_c.png"
+                alt="GoFood"
+              />
             </div>
           </div>
           <h1 className="flex justify-start py-3 pb-2 text-sm font-bold">
@@ -78,7 +89,10 @@ export default function Testimoni() {
         <div className="border-base relative rounded-xl border-slate-500 bg-white p-4 text-justify leading-relaxed text-shuttlegray shadow-2xl">
           <div className="avatar flex justify-center">
             <div className="w-16 rounded-full">
-              <img src="https://fore.coffee/wp-content/uploads/2020/08/77882837bf9a0b4e016702dcde11a125-56x56_c.png" />
+              <img
+                src="https://fore.coffee/wp-content/uploads/2020/08/77882837bf9a0b4e016702dcde11a125-56x56_c.png"
+                alt="Citilink"
+              />
             </div>
           </div>
           <h1 className="flex justify-start py-3 pb-2 text-sm font-bold">

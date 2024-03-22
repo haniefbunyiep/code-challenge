@@ -1,23 +1,10 @@
 import ProductCard from "./ProductCard";
 import db from "../../../../db/db.json";
+import Image from "next/image";
 
-export default async function FinalProductOverview() {
-  const fetchLimitedProducts = async () => {
-    try {
-      const getLimitedProducts = await fetch("http://localhost:4000/limited", {
-        cache: "no-cache",
-      });
-      const getLimited = await getLimitedProducts.json();
-      console.log(getLimited);
-      return getLimited;
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const limited = await fetchLimitedProducts();
+export default function FinalProductOverview() {
   return (
-    <div className=" flex h-[900px] w-auto flex-col  items-center justify-center">
+    <div className=" flex h-[900px] w-auto flex-col items-center justify-center ">
       <div className="flex flex-col items-center justify-center gap-8">
         <h1 className="text-lg font-bold text-shuttlegray sm:text-3xl">
           Coffee-OTD
@@ -34,3 +21,4 @@ export default async function FinalProductOverview() {
     </div>
   );
 }
+``;

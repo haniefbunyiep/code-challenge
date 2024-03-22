@@ -22,7 +22,7 @@ export default function Navbar() {
                   aria-label="close sidebar"
                   className="drawer-overlay"
                 ></label>
-                <ul className="text-shuttlegray menu relative min-h-full w-80 bg-base-200 p-4 font-bold">
+                <ul className="menu relative min-h-full w-80 bg-base-200 p-4 font-bold text-shuttlegray">
                   <li className="pt-10 hover:text-burnorange">
                     <Link href="/">Home</Link>
                   </li>
@@ -42,7 +42,12 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li className="hover:text-burnorange">
-                    <a>Download Now</a>
+                    <a
+                      href="https://www.tomoro-coffee.com/app/download"
+                      target="_blank"
+                    >
+                      Download Now
+                    </a>
                   </li>
 
                   {/* Close button */}
@@ -120,9 +125,13 @@ export default function Navbar() {
           </div>
           {/* Navbar Button */}
           <div className="flex h-[80%] w-[30%] items-center justify-center">
-            <span className="boder-2 text-shuttlegray border-shuttlegray flex h-[80%] w-auto items-center rounded-full border px-2 text-lg hover:border-burnorange hover:text-burnorange">
+            <a
+              className="boder-2 flex h-[80%] w-auto items-center rounded-full border border-shuttlegray px-2 text-lg text-shuttlegray hover:border-burnorange hover:text-burnorange"
+              href="https://www.tomoro-coffee.com/app/download"
+              target="_blank"
+            >
               Download App
-            </span>
+            </a>
           </div>
         </div>
       </div>

@@ -1,8 +1,12 @@
+import Image from "next/image";
+
 export default function ProductCard(props) {
   return (
-    <div className="flex gap-4 text-shuttlegray">
-      <img
+    <div className="flex gap-4 shadow-md hover:shadow-2xl hover:shadow-shuttlegray ">
+      <Image
         className="h-[150px] lg:h-[200px]"
+        width={200}
+        height={200}
         src={props.image}
         alt={props.name}
       />

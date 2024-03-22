@@ -1,59 +1,84 @@
-export default function Test() {
+"use client";
+import { useState, useEffect } from "react";
+import ProductCard from "~/components/Home/productOverview/ProductCard";
+import Divider from "~/components/cores/Divider/Divider";
+
+function App() {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const divider = document.querySelector(".fixed");
+      if (window.scrollY >= divider.offsetTop) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex h-[900px] w-[1350px] items-center justify-center bg-red-200 ">
-      <div className="grid grid-cols-2 ">
-        <div className="flex gap-4">
-          <img
-            className="h-[200px]"
-            src="https://static.fore.coffee/product/Classic%20Latte%20Iced.jpg"
-            alt=""
-          />
-          <div className="flex h-[200px] w-[300px] flex-col items-center justify-center gap-y-3 p-3">
-            <p className="text-md font-bold">
-              [FS] Iced Coco Peach Fusion Ice Blended
-            </p>
-            <p className="text-sm">Rp. 24.000</p>
-            <p className="text-[12px]">
-              Espresso dari biji kopi khas nusantara dipadukan susu oat
-              gluten-free dan sensasi nutty dari hazelnut.
-            </p>
-          </div>
+    <div className="flex h-full w-[1350px] flex-col items-center justify-center gap-20 bg-slate-200">
+      <div>Our Menu</div>
+      <div className={`fixed ${isFixed ? "opacity-100" : "opacity-0"}`}>
+        <Divider />
+      </div>
+      <div className="flex">
+        <div className="flex w-[20%] flex-auto items-center justify-center">
+          Coffee
         </div>
-        <div className="flex gap-4">
-          <img
-            className="h-[200px]"
-            src="https://static.fore.coffee/product/Classic%20Latte%20Iced.jpg"
-            alt=""
-          />
-          <div className="flex h-[200px] w-[300px] flex-col items-center justify-center gap-y-3 p-3">
-            <p className="text-md font-bold">
-              [FS] Iced Coco Peach Fusion Ice Blended
-            </p>
-            <p className="text-sm">Rp. 24.000</p>
-            <p className="text-[12px]">
-              Espresso dari biji kopi khas nusantara dipadukan susu oat
-              gluten-free dan sensasi nutty dari hazelnut.
-            </p>
-          </div>
+        <div className="grid w-[60%] flex-auto grid-cols-2 gap-10">
+          {db?.limited?.map((product, index) => {
+            return <ProductCard key={index} {...product} />;
+          })}
         </div>
-        <div className="flex gap-4">
-          <img
-            className="h-[200px]"
-            src="https://static.fore.coffee/product/Classic%20Latte%20Iced.jpg"
-            alt=""
-          />
-          <div className="flex h-[200px] w-[300px] flex-col items-center justify-center gap-y-3 p-3">
-            <p className="text-md font-bold">
-              [FS] Iced Coco Peach Fusion Ice Blended
-            </p>
-            <p className="text-sm">Rp. 24.000</p>
-            <p className="text-[12px]">
-              Espresso dari biji kopi khas nusantara dipadukan susu oat
-              gluten-free dan sensasi nutty dari hazelnut.
-            </p>
-          </div>
+      </div>
+      <div className="fixed">
+        <Divider />
+      </div>
+      <div className="flex">
+        <div className="flex w-[20%] flex-auto items-center justify-center">
+          Coffee
+        </div>
+        <div className="grid w-[60%] flex-auto grid-cols-2 gap-10">
+          {db?.limited?.map((product, index) => {
+            return <ProductCard key={index} {...product} />;
+          })}
+        </div>
+      </div>
+      <div className="fixed">
+        <Divider />
+      </div>
+      <div className="flex">
+        <div className="flex w-[20%] flex-auto items-center justify-center">
+          Coffee
+        </div>
+        <div className="grid w-[60%] flex-auto grid-cols-2 gap-10">
+          {db?.limited?.map((product, index) => {
+            return <ProductCard key={index} {...product} />;
+          })}
+        </div>
+      </div>
+      <div className="fixed">
+        <Divider />
+      </div>
+      <div className="flex">
+        <div className="flex w-[20%] flex-auto items-center justify-center">
+          Coffee
+        </div>
+        <div className="grid w-[60%] flex-auto grid-cols-2 gap-10">
+          {db?.limited?.map((product, index) => {
+            return <ProductCard key={index} {...product} />;
+          })}
         </div>
       </div>
     </div>
   );
 }
+
+export default App;
