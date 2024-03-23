@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="lg:hidden">
         <div className="relative flex h-[100px] flex-col items-center justify-between">
           <div className="relative flex h-[60%] w-full items-center justify-center border-b-2 border-dashed border-concrete bg-white">
-            <div className="absolute left-10 z-50 flex items-center justify-center">
+            <div className="absolute left-5 z-50 flex items-center justify-center">
               <div className="drawer">
                 <input
                   id="my-drawer"
@@ -84,7 +84,7 @@ export default function Navbar() {
 
           {usePathname().includes("/products") ? (
             <div className="flex h-[40%] w-full items-center justify-center">
-              <div className="carousel flex h-full w-full items-center justify-center gap-2 rounded-none bg-pampas text-shuttlegray">
+              <div className="px-fit carousel flex h-full w-full items-center justify-center rounded-none bg-pampas text-shuttlegray">
                 <div className="btn carousel-item btn-ghost rounded-none">
                   <a href="#sectionCoffee">Coffee</a>
                 </div>
