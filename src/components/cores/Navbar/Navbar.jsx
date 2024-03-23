@@ -11,70 +11,95 @@ export default function Navbar() {
     <nav>
       {/* Tablet and below */}
       <div className="lg:hidden">
-        <div className="relative flex h-[60px] items-center justify-center border-b-2 border-dashed border-concrete bg-white">
-          <div className="absolute left-10 z-50 flex">
-            <div className="drawer">
-              <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-              <div className="drawer-content">
-                <label htmlFor="my-drawer" className="drawer-button">
-                  <RxHamburgerMenu size={25} />
-                </label>
-              </div>
-              <div className="drawer-side">
-                <label
-                  htmlFor="my-drawer"
-                  aria-label="close sidebar"
-                  className="drawer-overlay"
-                ></label>
-                <ul className="menu relative min-h-full w-80 bg-base-200 p-4 font-bold text-shuttlegray">
-                  <li className="pt-10 hover:text-burnorange">
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link className="hover:text-burnorange" href="/aboutus">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:text-burnorange" href="/products">
-                      Product
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:text-burnorange" href="/teams">
-                      Our Teams
-                    </Link>
-                  </li>
-                  <li className="hover:text-burnorange">
-                    <a
-                      href="https://www.tomoro-coffee.com/app/download"
-                      target="_blank"
-                    >
-                      Download Now
-                    </a>
-                  </li>
+        <div className="relative flex h-[100px] flex-col items-center justify-between">
+          <div className="relative flex h-[60%] w-full items-center justify-center border-b-2 border-dashed border-concrete bg-white">
+            <div className="absolute left-10 z-50 flex items-center justify-center">
+              <div className="drawer">
+                <input
+                  id="my-drawer"
+                  type="checkbox"
+                  className="drawer-toggle"
+                />
+                <div className="drawer-content">
+                  <label htmlFor="my-drawer" className="drawer-button">
+                    <RxHamburgerMenu size={25} />
+                  </label>
+                </div>
+                <div className="drawer-side">
+                  <label
+                    htmlFor="my-drawer"
+                    aria-label="close sidebar"
+                    className="drawer-overlay"
+                  ></label>
+                  <ul className="menu relative min-h-full w-80 bg-base-200 p-4 font-bold text-shuttlegray">
+                    <li className="pt-10 hover:text-burnorange">
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                      <Link className="hover:text-burnorange" href="/aboutus">
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="hover:text-burnorange" href="/products">
+                        Product
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="hover:text-burnorange" href="/teams">
+                        Our Teams
+                      </Link>
+                    </li>
+                    <li className="hover:text-burnorange">
+                      <a
+                        href="https://www.tomoro-coffee.com/app/download"
+                        target="_blank"
+                      >
+                        Download Now
+                      </a>
+                    </li>
 
-                  {/* Close button */}
-                  <input id="my-drawer" type="checkbox" className="hidden" />
-                  <div className="absolute right-5">
-                    <label htmlFor="my-drawer">
-                      <MdClose size={25} className="text-black" />
-                    </label>
-                  </div>
-                </ul>
+                    {/* Close button */}
+                    <input id="my-drawer" type="checkbox" className="hidden" />
+                    <div className="absolute right-5">
+                      <label htmlFor="my-drawer">
+                        <MdClose size={25} className="text-black" />
+                      </label>
+                    </div>
+                  </ul>
+                </div>
               </div>
             </div>
+            {/* Navbar Logo */}
+            <div className="flex h-[80%] w-[30%] items-center justify-center ">
+              <Link href="/">
+                <img
+                  src="https://www.tomoro-coffee.com/img/icon7.2a9d4c28.png"
+                  alt=""
+                  className="h-9 w-auto"
+                />
+              </Link>
+            </div>
           </div>
-          {/* Navbar Logo */}
-          <div className="absolute flex h-[80%] w-[30%] items-center justify-center">
-            <Link href="/">
-              <img
-                src="https://www.tomoro-coffee.com/img/icon7.2a9d4c28.png"
-                alt=""
-                className="h-9 w-auto"
-              />
-            </Link>
-          </div>
+
+          {usePathname().includes("/products") ? (
+            <div className="flex h-[40%] w-full items-center justify-center">
+              <div className="carousel flex h-full w-full items-center justify-center gap-2 rounded-none bg-pampas text-shuttlegray">
+                <div className="btn carousel-item btn-ghost rounded-none">
+                  <a href="#sectionCoffee">Coffee</a>
+                </div>
+                <div className="btn carousel-item btn-ghost rounded-none">
+                  <a href="#sectionCoffeeOTD">Coffe-OTD</a>
+                </div>
+                <div className="btn carousel-item btn-ghost rounded-none">
+                  <a href="#sectionFood">Food</a>
+                </div>
+                <div className="btn carousel-item btn-ghost rounded-none">
+                  <a href="#sectionLimited">Limited Coffee</a>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
       {/* Laptop and above */}
