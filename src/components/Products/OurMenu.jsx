@@ -8,7 +8,7 @@ export default function OurMenu() {
       <div className="flex h-10 w-full items-center  justify-center text-3xl font-bold text-shuttlegray">
         OUR MENU
       </div>
-      <h2 className="flex w-[80%] items-center justify-center rounded-full border border-dashed border-shuttlegray p-2 text-lg font-bold text-shuttlegray">
+      <h2 className="flex w-fit items-center justify-center text-nowrap rounded-full border border-dashed border-shuttlegray p-2 text-center text-[10px] font-bold text-shuttlegray sm:text-[15px] lg:w-[80%] lg:text-lg">
         TYPE OF SERVICES AVAILABLE | Pick-up • Delivery • Coffee Catering
       </h2>
       {/* Coffe */}
