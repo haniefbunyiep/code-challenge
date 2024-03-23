@@ -83,8 +83,8 @@ export default function Navbar() {
           </div>
 
           {usePathname().includes("/products") ? (
-            <div className="flex h-[40%] w-full items-center justify-center">
-              <div className="px-fit carousel flex h-full w-full items-center justify-center rounded-none bg-pampas text-shuttlegray">
+            <div className="flex h-[40%] w-full items-center justify-center ">
+              <div className="px-fit carousel flex h-full w-full items-center justify-center rounded-none bg-pampas bg-opacity-[50%] text-shuttlegray">
                 <div className="btn carousel-item btn-ghost rounded-none">
                   <a href="#sectionCoffee">Coffee</a>
                 </div>
@@ -166,8 +166,8 @@ export default function Navbar() {
           </div>
 
           {usePathname().includes("/products") ? (
-            <div className="flex h-[40%] w-full items-center justify-center">
-              <div className="carousel flex h-full w-full items-center justify-center gap-2 rounded-none bg-pampas text-shuttlegray">
+            <div className="flex h-[40%] w-full items-center justify-center ">
+              <div className="carousel flex h-full w-full items-center justify-center gap-2 rounded-none bg-pampas bg-opacity-[50%] text-shuttlegray">
                 <div className="btn carousel-item btn-ghost rounded-none">
                   <a href="#sectionCoffee">Coffee</a>
                 </div>

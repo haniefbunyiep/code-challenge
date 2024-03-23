@@ -3,10 +3,14 @@ import ProductCard from "../Home/productOverview/ProductCard";
 
 export default function OurMenu() {
   return (
-    <div className="flex h-max w-max flex-col items-center justify-between gap-16  py-10">
+    <div className="flex h-max w-max flex-col items-center justify-between gap-16 pb-10">
       {/* Menu */}
-      <div className="flex h-10 w-full items-center  justify-center text-3xl font-bold text-shuttlegray">
-        OUR MENU
+      <div className="flex h-max w-screen items-end justify-center bg-apricot text-3xl font-bold text-shuttlegray">
+        <div className="h-full w-[20%] lg:w-[15%]">
+          <h1 className="flex justify-start text-nowrap">MENU</h1>
+          <h1 className="flex justify-center text-nowrap">MENU</h1>
+          <h1 className="flex justify-end text-nowrap">MENU</h1>
+        </div>
       </div>
       <h2 className="flex w-fit items-center justify-center text-nowrap rounded-full border border-dashed border-shuttlegray p-2 text-center text-[10px] font-bold text-shuttlegray sm:text-[15px] lg:w-[80%] lg:text-lg">
         TYPE OF SERVICES AVAILABLE | Pick-up • Delivery • Coffee Catering
@@ -16,7 +20,7 @@ export default function OurMenu() {
         id="sectionCoffee"
         className="flex w-full flex-col items-center gap-10 "
       >
-        <div className="flex w-full items-center justify-center  text-2xl font-bold text-shuttlegray">
+        <div className="flex w-full items-center justify-center text-[17px] font-bold text-shuttlegray sm:text-[20px] lg:text-2xl">
           COFFE
         </div>
         <div className="grid w-max grid-cols-1 gap-10  md:grid-cols-2">
@@ -30,7 +34,7 @@ export default function OurMenu() {
         id="sectionCoffeeOTD"
         className="flex w-full flex-col items-center gap-10 "
       >
-        <div className="flex w-full items-center justify-center  text-2xl font-bold text-shuttlegray">
+        <div className="flex w-full items-center justify-center  text-[17px] font-bold text-shuttlegray sm:text-[20px] lg:text-2xl">
           COFFE OF THE DAY
         </div>
         <div className="grid w-max grid-cols-1 gap-10  md:grid-cols-2">
@@ -44,7 +48,7 @@ export default function OurMenu() {
         id="sectionFood"
         className="flex w-full flex-col items-center gap-10 "
       >
-        <div className="flex w-full items-center justify-center  text-2xl font-bold text-shuttlegray">
+        <div className="flex w-full items-center justify-center  text-[17px] font-bold text-shuttlegray sm:text-[20px] lg:text-2xl">
           FOOD
         </div>
         <div className="grid w-max grid-cols-1 gap-10  md:grid-cols-2">
@@ -58,7 +62,7 @@ export default function OurMenu() {
         id="sectionLimited"
         className="flex w-full flex-col items-center gap-10 "
       >
-        <div className="flex w-full items-center justify-center  text-2xl font-bold text-shuttlegray">
+        <div className="flex w-full items-center justify-center  text-[17px] font-bold text-shuttlegray sm:text-[20px] lg:text-2xl">
           LIMITED COFFEE
         </div>
         <div className="grid w-max grid-cols-1 gap-10  md:grid-cols-2">
