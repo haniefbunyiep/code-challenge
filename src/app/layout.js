@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
           <div className="flex h-max items-center justify-center lg:px-20">
             {children}
           </div>
-
           <Footer />
         </div>
       </body>
