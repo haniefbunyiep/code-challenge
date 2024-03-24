@@ -72,7 +72,7 @@ export default function Navbar() {
             </div>
             {/* Navbar Logo */}
             <div className="flex h-[80%] w-[30%] items-center justify-center ">
-              <Link href="/">
+              <Link href="/home">
                 <img
                   src="https://www.tomoro-coffee.com/img/icon7.2a9d4c28.png"
                   alt=""
@@ -108,7 +108,7 @@ export default function Navbar() {
           <div className="flex h-[60%] w-full items-center justify-between border-b-2 border-dashed border-concrete bg-white">
             {/* Navbar Logo */}
             <div className="flex h-[80%] w-[30%] items-center justify-center">
-              <Link href="/">
+              <Link href="/home">
                 <img
                   src="https://www.tomoro-coffee.com/img/icon7.2a9d4c28.png"
                   alt=""
