@@ -40,14 +40,14 @@ export default function TeamsCard(props) {
                 />
               </div>
             </div>
-            <div className="-2 absolute -bottom-10 flex w-[200px] flex-col items-center justify-center rounded-xl bg-white shadow-md">
+            <div className="-2 absolute -bottom-6 flex w-[200px] flex-col items-center justify-center rounded-xl bg-white shadow-md">
               <p className="font-bold">
                 {props.name.first} {props.name.last}
               </p>
               <p className="font-light">{props.role.title}</p>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-start gap-5  p-2 md:h-[300px] md:w-[400px] lg:h-[350px] lg:w-[450px]">
+          <div className="flex flex-col items-center justify-start gap-5 p-2  md:h-[300px] md:w-[400px] md:justify-center lg:h-[350px] lg:w-[450px]">
             <h1 className="font-Barlow-Bold flex w-full justify-center  text-3xl font-bold text-shuttlegray">
               Our Experts Says
             </h1>

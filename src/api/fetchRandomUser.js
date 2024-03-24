@@ -3,8 +3,7 @@ export default function FetchData() {
     const roles = [
       {
         title: "CEO",
-        description:
-          "We’ve transformed our vision of offering the highest-quality coffee to consumers into a tangible achievement. Fore Coffee is a coffee brand deeply committed to every aspect of serving coffee. Furthermore, Fore’s mission extends beyond simply serving outstanding coffee. It involves expanding our footprint in diverse communities through the strategic establishment of branches and continuous partnerships that introduce creative menu options. The core of our success hinges on our collaborative teamwork, as we operate seamlessly as a unified system #FOREactMe",
+        description: `We’ve transformed our vision of offering the highest-quality coffee to consumers into a tangible achievement. Fore Coffee is a coffee brand deeply committed to every aspect of serving coffee. Furthermore, Fore’s mission extends beyond simply serving outstanding coffee. `,
       },
       {
         title: "CFO",
