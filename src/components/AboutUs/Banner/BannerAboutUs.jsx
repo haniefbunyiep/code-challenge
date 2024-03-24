@@ -43,7 +43,7 @@ export default function BannerAboutUs() {
       </div>
       {/* Banner xl above*/}
       <div className="hidden h-max xl:block">
-        <div className=" flex h-[900px] items-center justify-center gap-[100px]">
+        <div className=" flex h-[900px] items-center justify-center gap-x-[100px] ">
           <img
             className="h-auto w-[30%] object-cover"
             src="https://www.tomoro-coffee.com/img/about1.71f95995.png"

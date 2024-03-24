@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
     extend: {
@@ -33,7 +34,7 @@ export default {
       xl: "1280px",
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("flowbite/plugin")],
   daisyui: {
     themes: ["light"],
   },

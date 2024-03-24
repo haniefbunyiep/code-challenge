@@ -1,12 +1,9 @@
-export default function Teams() {
+import OurTeams from "~/components/Teams/OurTeams";
+
+export default function TeamsPage() {
   return (
-    <div>
-      <h1
-        className="flex h-screen items-center justify-center text-3xl font-bold underline
-      "
-      >
-        Our Teams
-      </h1>
+    <div className="flex w-full flex-col justify-around">
+      <OurTeams />
     </div>
   );
 }

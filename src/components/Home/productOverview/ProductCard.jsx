@@ -7,7 +7,7 @@ export default function ProductCard(props) {
         <Image
           className="h-[150px] lg:h-[200px]"
           width={150}
-          height={200}
+          height={150}
           src={props.image}
           alt={props.name}
         />

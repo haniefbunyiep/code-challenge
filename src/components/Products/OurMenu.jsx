@@ -12,7 +12,7 @@ export default function OurMenu() {
           <h1 className="flex justify-end text-nowrap">MENU</h1>
         </div>
       </div>
-      <h2 className="flex w-fit items-center justify-center text-nowrap rounded-full border border-dashed border-shuttlegray p-2 text-center text-[10px] font-bold text-shuttlegray sm:text-[15px] lg:w-[80%] lg:text-lg">
+      <h2 className="flex w-fit items-center justify-center text-nowrap rounded-full border border-dashed border-shuttlegray p-2 text-center text-[10px] font-bold text-shuttlegray sm:text-[15px] lg:w-[50%] lg:text-lg">
         TYPE OF SERVICES AVAILABLE | Pick-up • Delivery • Coffee Catering
       </h2>
       {/* Coffe */}

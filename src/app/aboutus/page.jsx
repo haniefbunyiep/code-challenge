@@ -3,7 +3,7 @@ import Culture from "~/components/AboutUs/Culture/Culture";
 
 export default function AboutUs() {
   return (
-    <div className="flex w-full flex-col justify-around">
+    <div className="flex w-full flex-col justify-between">
       <BannerAboutUs />
       <Culture />
     </div>
